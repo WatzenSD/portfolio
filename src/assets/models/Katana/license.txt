@@ -1,0 +1,11 @@
+Model Information:
+* title:	Katana
+* source:	https://sketchfab.com/3d-models/katana-bee6931856084cd4886b2901226bca6a
+* author:	Joan LP (https://sketchfab.com/joanlahots)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Katana" (https://sketchfab.com/3d-models/katana-bee6931856084cd4886b2901226bca6a) by Joan LP (https://sketchfab.com/joanlahots) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

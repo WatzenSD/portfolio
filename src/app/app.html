@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Loading Screen -->
+<div id="loading-screen">
+  <div class="loader-container">
+    <div class="loader-bar" id="loader-bar"></div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Background Dither -->
+<canvas id="Dither"></canvas>
+
+
+
+<!-- Blob Cursor -->
+<div id="BlobCursor"></div>
+
+
+
+<!-- Toys -->
+<div class="ToybarLeft">
+  <div class="MusicPad">
+    <div class="ControlsBlock">
+      <div class="TrackInfo">
+        <div id="TrackName">Track Name</div>
+        <div id="TrackAuthor">Author</div>
+      </div>
+
+      <div class="Controls">
+        <div data-clickable="true" class="ControlButton" id="Prev">⏮</div>
+        <div data-clickable="true" class="ControlButton" id="PlayPause">⏸</div>
+        <div data-clickable="true" class="ControlButton" id="Next">⏭</div>
+      </div>
+
+      <canvas id="MusicVisualizer"></canvas>
+    </div>
+
+    <div class="VolumeControl">
+      <input data-clickable="true" type="range" id="VolumeSlider" min="0" max="1" step="0.01" orient="vertical" value="0.5">
+    </div>
+  </div>
+
+  
+  <div id="ThemeDial">
+    <div data-title="true" class="ThemeTitle">Themes:</div>
+    <div data-clickable="true" data-spread="true" class="Button" data-theme="green">Green</div>
+    <div data-clickable="true" data-spread="true" class="Button" data-theme="red">Red</div>
+    <div data-clickable="true" data-spread="true" class="Button" data-theme="dark">Dark</div>
+    <div data-clickable="true" data-spread="true" class="Button" data-theme="light">Light</div>
+  </div>
+</div>
+
+<div class="ToybarRight">
+  <div id="WebStats">
+    <div data-title="true" class="Text" id="StatFPS">FPS: <div class="Value" id="FPSValue">0</div></div>
+    <div data-title="true" class="Text" id="StatCPU">CPU: <div class="Value" id="CPUValue">0%</div></div>
+    <div data-title="true" class="Text" id="StatMem">Mem: <div class="Value" id="MemValue">-</div></div>
+  </div>
+</div>
+
+
+
+<!-- Navbar -->
+<div class="Navbar">
+    <a data-spread="true" data-scrollTo="#Landing">Home</a>
+    <a data-spread="true" data-scrollTo=".ProjectContainer">Projects</a>
+    <a data-spread="true" data-scrollTo="#AboutMe">About Me</a>
+    <a data-spread="true" data-scrollTo="#Contacts">Contacts</a>
+</div>
+
+
+<!-- Landing -->
+<section id="Landing">
+  <div id="BackgroundBox">
+    <div id="ContentBox">
+      <div id="LandingTitleWrapper">
+        <div data-title="true" id="LandingTitle">Watzen's<br>Portfolio</div>
+        <div id="RevealBar"></div>
+      </div>
+      <div id="LandingImageWrapper">
+        <img id="LandingImage" src="Website_Icon.ico">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects -->
+<section class="ProjectContainer">
+  <div class="ProjectScroller">
+    <div class="ProjectTrack">
+
+      <div class="ProjectCard">
+        <div data-scroll-reveal="true" data-title="true" class="ProjectTitle">Ataraxia</div>
+        <div data-scroll-reveal="true" data-title="true" class="ProjectImageContainer">
+          <img class="ProjectImage" src="MP5_Customize.png">
+        </div>
+        <div data-title="true" class="ProjectDescription">My current project, super proud of it.</div>
+        <div class="ProjectLink">
+          <a href="https://www.roblox.com/games/79660887297198/Ataraxia" target="_blank">Game link</a>
+        </div>
+      </div>
+
+      <div class="ProjectCard">
+        <div data-scroll-reveal="true" data-title="true" class="ProjectTitle">REDLINE</div>
+        <div data-scroll-reveal="true" data-title="true" class="ProjectImageContainer">
+          <img class="ProjectImage" src="MP7_Inspect.png">
+        </div>
+        <div data-title="true" class="ProjectDescription">A First Person Shooter with a lot of customizability.</div>
+        <div class="ProjectLink">
+          <a href="https://www.roblox.com/games/105540863671085/REDLINE" target="_blank">Game link</a>
+        </div>
+      </div>
+
+      <div class="ProjectCard">
+        <div data-scroll-reveal="true" data-title="true" class="ProjectTitle">DETATCHED</div>
+        <div data-scroll-reveal="true" data-title="true" class="ProjectImageContainer">
+          <img class="ProjectImage" src="Detatched_Thumbnail.png">
+        </div>
+        <div data-title="true" class="ProjectDescription">Fast paced arcade shooter.</div>
+        <div class="ProjectLink">
+          <a href="https://www.roblox.com/games/120123506356344/DETATCHED" target="_blank">Game link</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Scroll Text -->
+<div id="ScrollTextContainer">
+  <div class="ScrollTextWrapper">
+    <div class="ScrollText">
+      <span>3D-Animation &nbsp; - &nbsp; Scripting &nbsp; - &nbsp; Drawing &nbsp; - &nbsp; Designing &nbsp; - &nbsp;</span>
+      <span>3D-Animation &nbsp; - &nbsp; Scripting &nbsp; - &nbsp; Drawing &nbsp; - &nbsp; Designing &nbsp; - &nbsp;</span>
+      <span>3D-Animation &nbsp; - &nbsp; Scripting &nbsp; - &nbsp; Drawing &nbsp; - &nbsp; Designing &nbsp; - &nbsp;</span>
+      <span>3D-Animation &nbsp; - &nbsp; Scripting &nbsp; - &nbsp; Drawing &nbsp; - &nbsp; Designing &nbsp; - &nbsp;</span>
+    </div>
+  </div>
+  <div class="ScrollTextWrapper">
+    <div class="ScrollText" data-dir="reverse">
+      <span>Creative &nbsp; - &nbsp; Motivated &nbsp; - &nbsp; Interested &nbsp; - &nbsp; Self-Learning &nbsp; - &nbsp;</span>
+      <span>Creative &nbsp; - &nbsp; Motivated &nbsp; - &nbsp; Interested &nbsp; - &nbsp; Self-Learning &nbsp; - &nbsp;</span>
+      <span>Creative &nbsp; - &nbsp; Motivated &nbsp; - &nbsp; Interested &nbsp; - &nbsp; Self-Learning &nbsp; - &nbsp;</span>
+      <span>Creative &nbsp; - &nbsp; Motivated &nbsp; - &nbsp; Interested &nbsp; - &nbsp; Self-Learning &nbsp; - &nbsp;</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- About Me -->
+<section id="AboutMe">
+  <div class="about-container">
+    <div class="about-left">
+      <img src="your-photo.jpg" alt="Your Name">
+    </div>
+
+    <div class="about-right">
+      <h2>About Me</h2>
+
+      <p>
+        Hi! I'm a passionate game developer and programmer with a love for creating fun experiences. I enjoy scripting, designing, and building engaging projects.
+      </p>
+
+      <ul class="experiences">
+        <li>4 years scripting</li>
+        <li>5 years developing games</li>
+        <li>1 year developing websites</li>
+        <li>Continuous learning & exploring new tech</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="SocialsVertical">
+    <a href="https://x.com/watzen1000" target="_blank" class="SocialsButton">
+      <img src="icons/x.svg" alt="X">
+    </a>
+    <a href="https://www.youtube.com/@WatzenSD" target="_blank" class="SocialsButton">
+      <img src="icons/youtube.svg" alt="Youtube">
+    </a>
+    <a href="https://discord.com/users/829038323125190676" target="_blank" class="SocialsButton">
+      <img src="icons/discord.svg" alt="Discord">
+    </a>
+    <a href="https://www.roblox.com/users/1837292436/profile" target="_blank" class="SocialsButton">
+      <img src="icons/roblox.svg" alt="Roblox">
+    </a>
+    <a href="https://www.reddit.com/user/Jealous_Natural8053/" target="_blank" class="SocialsButton">
+      <img src="icons/reddit.svg" alt="Reddit">
+    </a>
+  </div>
+</section>
+
+
+
+<!-- Looping Words -->
+<div id="LoopingWordsContainer">
+  <div class="looping-words">
+    <div class="looping-words__containers">
+      <ul data-looping-words-list="" class="looping-words__list">
+        <li class="looping-words__list">
+          <p data-title="true" class="looping-words__p">love & passion</p>
+        </li>
+        <li class="looping-words__list">
+          <p data-title="true" class="looping-words__p">game development</p>
+        </li>
+        <li class="looping-words__list">
+          <p data-title="true" class="looping-words__p">drawing</p>
+        </li>
+        <li class="looping-words__list">
+          <p data-title="true" class="looping-words__p">programming</p>
+        </li>
+        <li class="looping-words__list">
+          <p data-title="true" class="looping-words__p">3D/2D animation</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="looping-words__fade"></div>
+  
+    <div data-looping-words-selector="" class="looping-words__selector">
+      <div class="looping-words__edge"></div>
+      <div class="looping-words__edge is--2"></div>
+      <div class="looping-words__edge is--3"></div>
+      <div class="looping-words__edge is--4"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Image Gallery -->
+<div id="ImageGallery">
+  <div class="zoom-item one" data-title="true">
+    <img src="P260_Inspect.png">
+    <div data-title="true">
+      first
+    </div>
+  </div>
+  <div class="zoom-item two" data-title="true">
+    <img src="P260_Inspect.png">
+    <div data-title="true">
+      second
+    </div>
+  </div>
+  <div class="zoom-item three" data-title="true">
+    <img src="P260_Inspect.png">
+    <div data-title="true">
+      third
+    </div>
+  </div>
+  <div class="zoom-item four" data-title="true">
+    <img src="P260_Inspect.png">
+    <div data-title="true">
+      four
+    </div>
+  </div>
+  <div class="zoom-item five" data-title="true">
+    <img src="P260_Inspect.png">
+    <div data-title="true">
+      fifth
+    </div>
+  </div>
+  <div class="zoom-item six" data-title="true">
+    <img src="P260_Inspect.png">
+    <div data-title="true">
+      six no seven
+    </div>
+  </div>
+
+  <div class="zoom-item center" data-title="true">
+    <img src="MP7_Inspect.png">
+    <div data-title="true">
+      Finale
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Fire Transition -->
+<div id="FireScroller">
+  <div id="FireContainer">
+    <canvas id="FireCanvas"></canvas>
+  </div>
+</div>
+
+
+
+<!-- 3D Scene Scroll -->
+<div id="ScrollSceneScroller">
+  <div id="ScrollSceneCanvasContainer">
+    <canvas id="ScrollSceneCanvas"></canvas>
+  </div>
+
+  <img class="ScrollSceneImage" src="MAC-11_ADS.png">
+  <img class="ScrollSceneImage" src="MAC-11_Inspect.png">
+  <img class="ScrollSceneImage" src="MAC-11_ADS.png">
+  <img class="ScrollSceneImage" src="MAC-11_Inspect.png">
+</div>
+
+
+
+
+
+<!-- End -->
+<div id="EndContainer">
+  <div class="EndText">
+    <span id="EndTextContent"></span><span class="Caret"></span>
+  </div>
+
+  <div id="FingerWrap">
+    <img id="FingerYou" src="Index_pointing_at_you.png">
+    <img id="FingerDown" src="Index_pointing_down.png">
+  </div>
+</div>
+
+
+
+<!-- Contacts -->
+<div id="Contacts">
+  <canvas id="ContactsCanvas"></canvas>
+
+  <div data-title="true" id="ContactTitle">Contact Me</div>
+  <div data-title="true" id="ContactEmail">watzen1000@gmail.com</div>
+  <div data-title="true"  id="ContactDescription">Feel free to reach out, atleast for a hi!</div>
+
+  <form id="ContactForm">
+    <div class="row">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email Address" required>
+    </div>
+    <textarea type="text" placeholder="Message" id="ContactMessage" required></textarea>
+    <div data-spread="true" data-clickable="true" type="submit" id="ContactSubmitButton">Send Message</div>
+  </form>
+
+  <div id="SocialsHorizontal">
+    <a href="https://x.com/watzen1000" target="_blank" class="SocialsButton">
+      <img src="icons/x.svg" alt="X">
+    </a>
+    <a href="https://www.youtube.com/@WatzenSD" target="_blank" class="SocialsButton">
+      <img src="icons/youtube.svg" alt="Youtube">
+    </a>
+    <a href="https://discord.com/users/829038323125190676" target="_blank" class="SocialsButton">
+      <img src="icons/discord.svg" alt="Discord">
+    </a>
+    <a href="https://www.roblox.com/users/1837292436/profile" target="_blank" class="SocialsButton">
+      <img src="icons/roblox.svg" alt="Roblox">
+    </a>
+    <a href="https://www.reddit.com/user/Jealous_Natural8053/" target="_blank" class="SocialsButton">
+      <img src="icons/reddit.svg" alt="Reddit">
+    </a>
+  </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-left">
+      <span data-title="true" class="footer-title">© 2026 Daniel Mohamadzada</span>
+      <span data-title="true" class="footer-sub">All assets belong to their respective creators.</span>
+    </div>
+
+    <div class="footer-right">
+
+      <div class="credit-group">
+        <span data-title="true" class="credit-title">Assets Used</span>
+
+        <span data-title="true" class="footer-credit">
+          <a href="https://skfb.ly/6SZuG" target="_blank">“Jousting Helmet”</a>  
+          by <a href="https://sketchfab.com/TheRoyalArmoury" target="_blank">The Royal Armoury</a>  
+          — <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
+        </span>
+
+        <span data-title="true" class="footer-credit">
+          <a href="https://skfb.ly/p86Vo" target="_blank">“Diorama”</a>  
+          by <a href="https://sketchfab.com/mhughe46" target="_blank">mhughe46</a>  
+          — <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
+        </span>
+
+        <span data-title="true" class="footer-credit">
+          <a href="https://skfb.ly/6SHqT" target="_blank">“Medieval Chandelier”</a>  
+          by <a href="https://sketchfab.com/Kevin.Popescu" target="_blank">Kevin.Popescu</a>  
+          — <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
+        </span>
+
+        <span data-title="true" class="footer-credit">
+          <a href="https://skfb.ly/p9ZW7" target="_blank">“⛨ The Forgotten Knight ⛨”</a>  
+          by <a href="https://sketchfab.com/dark_igorek" target="_blank">dark_igorek</a>  
+          — <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
+        </span>
+
+        <span data-title="true" class="footer-credit">
+          <a href="https://www.vecteezy.com/free-photos/dark-skies" target="_blank">“Dark Sky”</a>  
+          by Vecteezy
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+</footer>

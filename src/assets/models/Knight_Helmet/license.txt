@@ -1,0 +1,11 @@
+Model Information:
+* title:	Jousting Helmet
+* source:	https://sketchfab.com/3d-models/jousting-helmet-a4eea31d9d9441af9434a7da5ae46b54
+* author:	The Royal Armoury (Livrustkammaren) (https://sketchfab.com/TheRoyalArmoury)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Jousting Helmet" (https://sketchfab.com/3d-models/jousting-helmet-a4eea31d9d9441af9434a7da5ae46b54) by The Royal Armoury (Livrustkammaren) (https://sketchfab.com/TheRoyalArmoury) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
