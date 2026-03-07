@@ -16,22 +16,18 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "browser": "src/main.ts",
+            "outputPath": "docs",
+            "index": "src/index.html",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/gsap/dist/gsap.min.js",
-              "node_modules/gsap/dist/ScrollTrigger.min.js"
+
             ]
           },
           "configurations": {
